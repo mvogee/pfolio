@@ -247,6 +247,21 @@ nav a:hover {
     background-color: var(--accent-green);
     color: var(--darker);
 }
+.visit-project-btn::after {
+    content: "";
+    background-image: url(../img/arrow-right.svg);
+    display: inline-block;
+    position: absolute;
+    right: 1em;
+    top: 0.7em;
+    width: 1em;
+    height: 1em;
+    transform: scale(0, 1);
+    transition: transform ease-out 300ms;
+}
+.visit-project-btn:hover::after {
+    transform: scale(1,1);
+}
 
 .project-container img {
     width: 100%;
