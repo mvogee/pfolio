@@ -26,34 +26,51 @@
                     </ul>
                 </div>
                 <div id="socials" class="nav-right">
-                    <a href="https://linkedin.com/in/matthewvogee" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-                    <a href="https://github.com/mvogee" target="_blank"><i class="fa-brands fa-github-square"></i></a>
+                    <a href="https://linkedin.com/in/matthewvogee" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://github.com/mvogee" target="_blank"><i class="fa-brands fa-github"></i></a>
                 </div>
 
             </nav>
-            <p id="greeting" class="accent-text">Well hello there! My name is</p>
-            <h1>Matthew Vogee</h1>
-            <h1>I'm a frontend developer</h1>
-            <p>Take a look at my work and feel free to dap me up.</p>
+            <div class="introduction">
+                <p id="greeting" class="accent-text">Hi, My name is</p>
+                <div class="heading">
+                    <h1>Matthew Vogee</h1>
+                    <h1 class="whoiam">I'm a frontend developer</h1>
+                </div>
+                <p class="whoiam">Take a look at my work and feel free to dap me up.</p>
+            </div>
         </header>
 
         <div class="cta">
-            <a href="#contact" class="cta-btn">dap me up!</a>
+            <a href="#contact" class="cta-btn">Get in touch</a>
         </div>
-        <article id="about">
-            <h2>About me</h2>
-            <hr>
-            <div class="about-text">
-                <p>I'm a web developer bla bla bla i do stuff and i need to keep this short and sweet.
-                    Just enough info to intrigue but not enough to turn off anybody.</p>
-            </div>
-            <div id="profile-picture-container">
-                <img src="#">
-            </div>
-        </article>
-
+            <article id="about">
+                <h2 class="section-title">About me</h2>
+                <hr>
+                <div id="about-content-container">
+                    <div class="about-text">
+                        <p>I'm a web developer bla bla bla i do stuff and i need to keep this short and sweet.
+                            Just enough info to intrigue but not enough to turn off anybody.</p>
+                    </div>
+                    <aside id="technologies">
+                        <h3 class="section-title">Tech Stack</h3>
+                        <div class="tech-item-container">
+                            <div class="tech-item"><i class="fa-brands fa-html5"></i><p>HTML</p></div>
+                            <div class="tech-item"><i class="fa-brands fa-css3-alt"></i><p>CSS</p></div>
+                            <div class="tech-item"><i class="fa-brands fa-js"></i><p>javascript</p></div>
+                            <div class="tech-item" style="padding-top: 6px"><img src="./img/typescript.svg"></img><p>TypeScript</p></div>
+                            <div class="tech-item"><i class="fa-brands fa-react"></i><p>React</p></div>
+                            <div class="tech-item"><i class="fa-brands fa-node-js"></i><p>Node.js</p></div>
+                            <div class="tech-item"><i class="fa-brands fa-bootstrap"></i><p>Bootstrap</p></div>
+                            <div class="tech-item"><i class="fa-solid fa-database"></i><p>MySql</p></div>
+                            <div class="tech-item"><i class="fa-solid fa-database"></i><p>MongoDB</p></div>
+                            <div class="tech-item"><i class="fa-solid fa-c"></i><p>c</p></div>
+                        </div>
+                    </aside>
+                </div>
+            </article>
         <article id="projects">
-            <h2>Projects</h2>
+            <h2 class="section-title">Projects</h2>
             <hr>
             <div class="project-container">
                 <div class="content-container">
@@ -67,22 +84,8 @@
             </div>
         </article>
 
-        <aside id="technologies">
-            <h3>Tech Stack</h3>
-            <i class="fa-brands fa-html5">HTML</i>
-            <i class="fa-brands fa-css3-alt">CSS</i>
-            <i class="fa-brands fa-js">JavaScript</i>
-            <img src="./img/typescript.svg">Typescript</img>
-            <i class="fa-brands fa-react">React</i>
-            <i class="fa-brands fa-node-js">Node.js</i>
-            <i class="fa-brands fa-bootstrap">Bootstrap</i>
-            <i class="fa-solid fa-database">MySQl</i>
-            <i class="fa-solid fa-database">MongoDB</i>
-            <i class="fa-solid fa-c">C</i>
-        </aside>
-
         <section id="contact">
-            <h2>Get in contact</h2>
+            <h2 class="section-title">Get in contact</h2>
             <hr>
             <form action="#" method="post">
                 <label for="name-input">Name</label>
