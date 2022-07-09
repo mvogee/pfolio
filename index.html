@@ -10,25 +10,28 @@
         <title>Matthew Vogee</title>
         <meta name="description" content="Portfolio website for Matthew Vogee. Frontend developer.">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="./css/default.css">
         <script src="https://kit.fontawesome.com/56794fbcf6.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <header>
             <nav>
-                <ul>
-                    <li><a href="#about">.About</a></li>
-                    <li><a href="#projects">.Projects</a></li>
-                    <li><a href="#contact">.Contact</a></li>
-                    <li><a href="#" target="_blank">.Resume</a></li>
-                </ul>
-                <div id="nav-socials">
+                <div class="nav-left">
+                    <i class="fa-solid fa-m"></i>
+                    <ul>
+                        <li><a href="#about">.About</a></li>
+                        <li><a href="#projects">.Projects</a></li>
+                        <li><a href="#contact">.Contact</a></li>
+                        <li><a href="#" target="_blank">.Resume</a></li>
+                    </ul>
+                </div>
+                <div id="socials" class="nav-right">
                     <a href="https://linkedin.com/in/matthewvogee" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
                     <a href="https://github.com/mvogee" target="_blank"><i class="fa-brands fa-github-square"></i></a>
                 </div>
 
             </nav>
-            <p>Well hello there! My name is</p>
+            <p id="greeting" class="accent-text">Well hello there! My name is</p>
             <h1>Matthew Vogee</h1>
             <h1>I'm a frontend developer</h1>
             <p>Take a look at my work and feel free to dap me up.</p>
@@ -64,11 +67,30 @@
             </div>
         </article>
 
+        <aside id="technologies">
+            <h3>Tech Stack</h3>
+            <i class="fa-brands fa-html5">HTML</i>
+            <i class="fa-brands fa-css3-alt">CSS</i>
+            <i class="fa-brands fa-js">JavaScript</i>
+            <img src="./img/typescript.svg">Typescript</img>
+            <i class="fa-brands fa-react">React</i>
+            <i class="fa-brands fa-node-js">Node.js</i>
+            <i class="fa-brands fa-bootstrap">Bootstrap</i>
+            <i class="fa-solid fa-database">MySQl</i>
+            <i class="fa-solid fa-database">MongoDB</i>
+            <i class="fa-solid fa-c">C</i>
+        </aside>
+
         <section id="contact">
             <h2>Get in contact</h2>
             <hr>
-            <form>
-
+            <form action="#" method="post">
+                <label for="name-input">Name</label>
+                <input id="name-input" type="text" name="name" />
+                <label for="email-input">Email</label>
+                <input id="email-input" type="email" name="email" />
+                <label for="message-input">Message</label>
+                <textarea id="message-input" name="message" ></textarea>
             </form>
         </section>
         <!--[if lt IE 7]>

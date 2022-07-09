@@ -1,0 +1,113 @@
+:root {
+    --darker: #031229;
+    --main-bg: #0A1E39;
+    --accent-green: #49FFCD;
+    --grey: #939EBF;
+    --off-white: #E6F1FF;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    background-color: var(--main-bg);
+    color: var(--off-white);
+    font-family: Roboto, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+h1 {
+    color: var(--off-white);
+    font-size: 3.5rem;
+    font-weight: bold;
+}
+
+h2 {
+    color: var(--off-white);
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+h3 {
+    color: var(--off-white);
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+p {
+    font-size: 1rem;
+    color: var(--off-white);
+    font-weight: 400;
+}
+
+hr {
+    border-color: var(--accent-green);
+}
+
+i {
+    padding: 0;
+}
+
+header {
+    margin: 0 1.5em 5em 1.5em;
+}
+
+.accent-text {
+    font-family: 'Courier New', Courier, monospace;
+    color: var(--accent-green);
+}
+
+
+/* NAVIGATION DESKTOP */
+#socials {
+    display: inline;
+    position: absolute;
+    right: 1.5em;
+}
+
+#socials i {
+    color: var(--off-white);
+    font-size: 2.5rem;
+    margin: 0 0.5rem;
+}
+#socials i:hover {
+    color: var(--accent-green);
+}
+
+.nav-left {
+    display: inline;
+}
+.nav-left i {
+    font-size: 1.5rem;
+}
+nav {
+    display: flex;
+    align-items: center;
+    /* padding-left: 1.5em; */
+    height: 6em;
+    background-color: var(--main-bg);
+}
+nav i {
+    color: var(--accent-green);
+    display: inline;
+}
+nav ul {
+    margin: 0 2em;
+    padding: 5px 0;
+    display: inline;
+    list-style: none;
+    font-family: 'Courier New', Courier, monospace;
+}
+nav ul li {
+    display: inline;
+    margin: 0 1rem 0 1rem;
+}
+nav a, nav a:visited {
+    text-decoration: none;
+    color: var(--off-white);
+}
+
+nav a:hover {
+    color: var(--accent-green);
+}
