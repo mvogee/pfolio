@@ -48,7 +48,7 @@ h3 {
 
 p {
     font-size: 1rem;
-    color: var(--off-white);
+    color: var(--grey);
     font-weight: 400;
 }
 
@@ -160,6 +160,7 @@ nav a:hover {
     border: 0.1rem solid var(--accent-green);
     border-radius: 25px;
     padding: 0.6em 2.5em;
+    transition: 0.3s;
 }
 
 .cta a:hover {
@@ -193,9 +194,10 @@ nav a:hover {
 /* projects */
 
 .project-container {
+    margin: 5em 0;
     display: grid;
     grid-template-columns: repeat(10, 10% [col-start]);
-    grid-template-rows: repeat(8, 4em [row-start]);
+    grid-template-rows: repeat(8, auto [row-start]);
 }
 
 .project-container .content-container {
@@ -210,8 +212,25 @@ nav a:hover {
     z-index: 2;
     position: relative;
 }
-.content-container p {
+
+.project-container:nth-child(even) .content-container {
+    grid-column: 6/11;
+    text-align: right;
+}
+.project-container:nth-child(even) .visit-project-btn {
+    bottom: -1.3rem;
+    right: 1em;
+}
+
+.project-description {
+    color: var(--grey);
+    font-size: 0.9rem;
     margin: 1em 0.5em;
+}
+
+.project-stack {
+    color: var(--accent-green);
+    text-align: right;
 }
 .visit-project-btn {
     background-color: var(--main-bg);
@@ -221,14 +240,29 @@ nav a:hover {
     border-radius: 25px;
     padding: 0.6em 2.5em;
     position: absolute;
-    bottom: -1.2em;
+    bottom: -1.3em;
+    transition: 0.5s;
+}
+.visit-project-btn:hover {
+    background-color: var(--accent-green);
+    color: var(--darker);
 }
 
 .project-container img {
     width: 100%;
+
 }
+
 .project-container .img-container {
     grid-column: 4 / 11;
     grid-row: 2 / 7;
     z-index: 1;
 }
+
+
+.project-container:nth-child(even) .img-container {
+    grid-column: 1 / 8;
+}
+
+
+
