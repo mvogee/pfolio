@@ -15,6 +15,7 @@ body {
     background-color: var(--main-bg);
     color: var(--off-white);
     font-family: Roboto, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    border-radius: 5px;
 }
 
 article {
@@ -65,6 +66,10 @@ header {
     margin: 0 1.5em 5em 1.5em;
 }
 
+a:visited {
+    color: inherit;
+}
+
 .accent-text {
     font-family: "SF Mono","Fira Code","Fira Mono","Roboto Mono", monospace;
     /* font-family: 'Courier New', Courier, monospace; */
@@ -98,11 +103,17 @@ header {
     font-size: 1.5rem;
 }
 nav {
+    margin: 0 1.5em 5em 1.5em;
     display: flex;
     align-items: center;
     /* padding-left: 1.5em; */
     height: 6em;
-    background-color: var(--main-bg);
+    background-color: #0A1E3990;
+    position: sticky;
+    opacity: 9;
+    top: 0;
+    z-index: 3;
+    backdrop-filter: blur(0.4rem);
 }
 nav i {
     color: var(--accent-green);
@@ -167,6 +178,10 @@ nav a:hover {
     box-shadow: 0px 0px 8px var(--accent-green);
 }
 
+#resume-cta {
+    margin: 0 auto;
+}
+
 #about-content-container {
     display: flex;
     flex-direction: row;
@@ -196,7 +211,7 @@ nav a:hover {
 .project-container {
     margin: 5em 0;
     display: grid;
-    grid-template-columns: repeat(10, 10% [col-start]);
+    grid-template-columns: repeat(10, 1fr [col-start]);
     grid-template-rows: repeat(8, auto [row-start]);
 }
 
@@ -249,7 +264,7 @@ nav a:hover {
 }
 .visit-project-btn::after {
     content: "";
-    background-image: url(../img/arrow-right.svg);
+    background-image: url(../img/arrow-right-dark.svg);
     display: inline-block;
     position: absolute;
     right: 1em;
@@ -279,5 +294,70 @@ nav a:hover {
     grid-column: 1 / 8;
 }
 
-
-
+#contact form {
+    max-width: 35em;
+    margin: 2.5rem auto;
+}
+.contact-input {
+    width: 100%;
+    margin-top: 0.5rem;
+    padding: 0.3rem;
+    border: 0.1rem solid var(--accent-green);
+    background-color: var(--darker);
+    color: var(--off-white);
+    border-radius: 5px;
+    font-family:  Roboto, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.contact-input:focus {
+    outline-color: var(--accent-green);
+}
+#contact label {
+    margin-top: 1rem;
+    display: block;
+}
+#message-input {
+    resize: none;
+}
+.submit-btn {
+    margin-top: 1.5rem;
+    width: fit-content;
+    color: var(--accent-green);
+    background-color: var(--main-bg);
+    border: 0.1rem solid var(--accent-green);
+    border-radius: 25px;
+    padding: 0.6em 2.5em;
+    transition: 0.3s;
+    position: relative;
+}
+.submit-btn:hover {
+    box-shadow: 0.3rem 0.5rem 0.2rem var(--darker);
+    font-size: 0.9rem;
+    
+}
+.submit-btn:active {
+    color: var(--grey);
+}
+.submit-btn::after {
+    content: "";
+    background-image: url(../img/arrow-right-light.svg);
+    display: inline-block;
+    position: absolute;
+    right: 0.9rem;
+    top: 0.65rem;
+    width: 1em;
+    height: 1em;
+    transform: scale(0, 1);
+    transition: 300ms ease-out;
+}
+.submit-btn:hover::after {
+    transform: scale(1, 1);
+}
+footer .socials {
+    font-size: 2rem;
+    text-align: center;
+    color: var(--grey);
+    margin: 1em auto;;
+}
+footer a {
+    margin: 1rem;
+}

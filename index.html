@@ -14,23 +14,24 @@
         <script src="https://kit.fontawesome.com/56794fbcf6.js" crossorigin="anonymous"></script>
     </head>
     <body>
-        <header>
-            <nav>
-                <div class="nav-left">
-                    <i class="fa-solid fa-m"></i>
-                    <ul>
-                        <li><a href="#about">.About</a></li>
-                        <li><a href="#projects">.Projects</a></li>
-                        <li><a href="#contact">.Contact</a></li>
-                        <li><a href="#" target="_blank">.Resume</a></li>
-                    </ul>
-                </div>
-                <div id="socials" class="nav-right">
-                    <a href="https://linkedin.com/in/matthewvogee" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
-                    <a href="https://github.com/mvogee" target="_blank"><i class="fa-brands fa-github"></i></a>
-                </div>
+        <nav>
+            <div class="nav-left">
+                <i class="fa-solid fa-m"></i>
+                <ul>
+                    <li><a href="#about">.About</a></li>
+                    <li><a href="#projects">.Projects</a></li>
+                    <li><a href="#contact">.Contact</a></li>
+                    <li><a href="#" target="_blank">.Resume</a></li>
+                </ul>
+            </div>
+            <div id="socials" class="nav-right">
+                <a href="https://linkedin.com/in/matthewvogee" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://github.com/mvogee" target="_blank"><i class="fa-brands fa-github"></i></a>
+            </div>
 
-            </nav>
+        </nav>
+        <header>
+
             <div class="introduction">
                 <p id="greeting" class="accent-text">Hi, My name is</p>
                 <div class="heading">
@@ -75,7 +76,6 @@
             <div class="project-container">
                 <div class="content-container">
                     <h3>Budget Tool</h3>
-                    
                     <p class="project-description">
                         This is a budget tool i created to use for my personal income and spending tracking.
                         It is built using React for the front end and Nodejs + Express for the back end api.
@@ -123,19 +123,28 @@
                 </div>
             </div>
         </article>
-
+        <div class="cta">
+            <a href="#" id="resume-cta" class="cta-btn">My resume</a>
+        </div>
         <section id="contact">
             <h2 class="section-title">Get in contact</h2>
             <hr>
             <form action="#" method="post">
                 <label for="name-input">Name</label>
-                <input id="name-input" type="text" name="name" />
+                <input id="name-input" class="contact-input" type="text" name="name" placeholder="Name"/>
                 <label for="email-input">Email</label>
-                <input id="email-input" type="email" name="email" />
+                <input id="email-input" class="contact-input" type="email" name="email" placeholder="Email"/>
                 <label for="message-input">Message</label>
-                <textarea id="message-input" name="message" ></textarea>
+                <textarea id="message-input" class="contact-input" name="message" rows="8"></textarea>
+                <button class="submit-btn" type="submit">Send</button>
             </form>
         </section>
+        <footer>
+            <div class="socials">
+                <a href="https://linkedin.com/in/matthewvogee" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://github.com/mvogee" target="_blank"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </footer>
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
