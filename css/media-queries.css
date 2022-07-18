@@ -1,0 +1,62 @@
+/* Technologies media query */
+@media (max-width: 850px) {
+    #about-content-container {
+        flex-direction: column;
+    }
+}
+
+/* Projects media query */
+@media (max-width: 45em) {
+    
+}
+
+/* Nav media query */
+@media (max-width: 38em) {
+    .mobile-nav-btn {
+        display: block;
+        font-size: 1.8rem;
+        width: 100%;
+        text-align: center;
+    }
+    .nav-btn-flipped {
+        transform: rotate(180deg);
+    }
+    nav {
+        flex-direction: column;
+        height: auto;
+        padding: 0;
+        box-shadow: 0px 0.2rem 0.2rem var(--darker);
+    }
+    nav ul {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+    nav ul li {
+        margin: 1em 0;
+    }
+    .nav-left {
+        width: 100%;
+    }
+    .nav-left i {
+        display: none;
+    }
+    #socials{
+        position: static;
+        display: block;
+        padding: 1em 0;
+        width: 100%;
+        text-align: center;
+        border-bottom: 0.1em solid var(--accent-green);
+    }
+    #socials a {
+        margin: 0 1em;
+    }
+    .nav-hidden {
+        top: 0;
+    }
+    .nav-mobile-hide {
+        top: -17.2em;
+    }
+
+}

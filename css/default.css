@@ -148,6 +148,9 @@ nav a:hover {
 .nav-hidden {
     top: -6.5em;
 }
+.mobile-nav-btn {
+    display: none;
+}
 
 /* END NAV */
 
@@ -191,10 +194,19 @@ nav a:hover {
     margin: 0 auto;
 }
 
+/* About */
+
+#technologies h3{
+    margin: 1em 0;
+}
+
 #about-content-container {
     display: flex;
     flex-direction: row;
-    column-gap: 5em;
+    column-gap: 4em;
+}
+.about-text {
+    margin: 0.5em;
 }
 
 #technologies i{

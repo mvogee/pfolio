@@ -1,9 +1,9 @@
-const nav = document.querySelector("nav");
 let didScroll = false;
 let lastScrollTop = 0;
 let scrollDelta = 100;
 
 const scrollAction = () => {
+    const nav = document.querySelector("nav");
     let scrollTop = window.scrollY;
     if (Math.abs(scrollTop - lastScrollTop) <= scrollDelta) {
         return ;
