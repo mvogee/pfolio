@@ -9,6 +9,7 @@
 
 html {
     scroll-behavior: smooth;
+    scroll-padding-top: 6em;
 }
 body {
     margin: 0;
@@ -67,7 +68,7 @@ header {
 }
 
 a:visited {
-    color: inherit;
+    color: var(--grey);
 }
 
 .accent-text {
@@ -194,8 +195,6 @@ nav a:hover {
     margin: 0 auto;
 }
 
-/* About */
-
 #technologies h3{
     margin: 1em 0;
 }
@@ -213,19 +212,19 @@ nav a:hover {
     font-size: 5rem;
 }
 .tech-item-container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    column-gap: 1em;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 2em;
     row-gap: 1em;
     text-align: center;
-    justify-content: left;
 }
 
 .tech-item {
     width: 5em;
 }
-
+.special {
+    padding-top: 0.4em;
+}
 
 /* projects */
 
@@ -251,12 +250,12 @@ nav a:hover {
 
 .project-container:nth-child(even) .content-container {
     grid-column: 6/11;
-    text-align: right;
+    /* text-align: right; */
 }
-.project-container:nth-child(even) .visit-project-btn {
+/* .project-container:nth-child(even) .visit-project-btn {
     bottom: -1.3rem;
     right: 1em;
-}
+} */
 
 .project-description {
     color: var(--grey);
@@ -320,7 +319,7 @@ nav a:hover {
     margin: 2.5rem auto;
 }
 .contact-input {
-    width: 100%;
+    width: -webkit-fill-available;
     margin-top: 0.5rem;
     padding: 0.3rem;
     border: 0.1rem solid var(--accent-green);

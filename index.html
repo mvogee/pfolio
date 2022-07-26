@@ -10,6 +10,10 @@
         <title>Matthew Vogee</title>
         <meta name="description" content="Portfolio website for Matthew Vogee. Frontend developer.">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" sizes="180x180" href="./favicon_io/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="./favicon_io/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="./favicon_io//favicon-16x16.png">
+        <link rel="manifest" href="./favicon_io/site.webmanifest">
         <link rel="stylesheet" href="./css/default.css">
         <link rel="stylesheet" href="./css/media-queries.css">
         <script src="https://kit.fontawesome.com/56794fbcf6.js" crossorigin="anonymous"></script>
@@ -38,7 +42,7 @@
                 <p id="greeting" class="accent-text">Hi, My name is</p>
                 <div class="heading">
                     <h1>Matthew Vogee</h1>
-                    <h1 class="whoiam">I'm a frontend developer</h1>
+                    <h1 class="whoiam">I'm a front-end developer</h1>
                 </div>
                 <p class="whoiam">Take a look at my work and feel free to dap me up.</p>
             </div>
@@ -61,13 +65,12 @@
                             <div class="tech-item"><i class="fa-brands fa-html5" ></i><p>HTML</p></div>
                             <div class="tech-item"><i class="fa-brands fa-css3-alt"></i><p>CSS</p></div>
                             <div class="tech-item"><i class="fa-brands fa-js"></i><p>Javascript</p></div>
-                            <div class="tech-item" style="padding-top: 6px"><img src="./img/typescript.svg"></img><p>TypeScript</p></div>
+                            <div class="tech-item special"><img src="./img/typescript.svg"></img><p>TypeScript</p></div>
                             <div class="tech-item"><i class="fa-brands fa-react"></i><p>React</p></div>
                             <div class="tech-item"><i class="fa-brands fa-node-js"></i><p>Node.js</p></div>
                             <div class="tech-item"><i class="fa-brands fa-bootstrap"></i><p>Bootstrap</p></div>
                             <div class="tech-item"><i class="fa-solid fa-database"></i><p>MySql</p></div>
                             <div class="tech-item"><i class="fa-solid fa-database"></i><p>MongoDB</p></div>
-                            <div class="tech-item"><i class="fa-solid fa-c"></i><p>c</p></div>
                         </div>
                     </aside>
                 </div>
@@ -102,11 +105,11 @@
                         The server is not currently running but you can visit the github repo to see a more in depth
                         description and pictures of the project.
                     </p>
-                    <p class="project-stack">React, Node, Express, MySql</p>
+                    <p class="project-stack">React, Node, Express, MongoDB</p>
                     <a class="visit-project-btn" href="http://budgettool.matthewvogee.com/landingPage" target="_blank">View Project</a>
                 </div>
                 <div class="img-container">
-                    <img class="project-img" alt="Budget tool screenshot" src="./img/budgetToolCover.png">
+                    <img class="project-img" alt="Budget tool screenshot" src="./img/price_scraper_tool.png">
                 </div>
             </div>
             <!-- !PROJECT 3 -->
@@ -121,7 +124,7 @@
                     <a class="visit-project-btn" href="http://budgettool.matthewvogee.com/landingPage" target="_blank">View Project</a>
                 </div>
                 <div class="img-container">
-                    <img class="project-img" alt="Budget tool screenshot" src="./img/budgetToolCover.png">
+                    <img class="project-img" alt="Password generator screenshot" src="./img/Pw_gen_screenshot.png">
                 </div>
             </div>
         </article>
@@ -131,13 +134,13 @@
         <section id="contact">
             <h2 class="section-title">Get in contact</h2>
             <hr>
-            <form action="#" method="post">
+            <form id="contact-form" action="https://getform.io/f/1c9598ab-71f2-42da-a56d-beb8f0b60916" method="POST">
                 <label for="name-input">Name</label>
-                <input id="name-input" class="contact-input" type="text" name="name" placeholder="Name"/>
+                <input id="name-input" class="contact-input" type="text" name="name" placeholder="Name" required/>
                 <label for="email-input">Email</label>
-                <input id="email-input" class="contact-input" type="email" name="email" placeholder="Email"/>
+                <input id="email-input" class="contact-input" type="email" name="email" placeholder="Email" required/>
                 <label for="message-input">Message</label>
-                <textarea id="message-input" class="contact-input" name="message" rows="8"></textarea>
+                <textarea id="message-input" class="contact-input" name="message" rows="8" required></textarea>
                 <button class="submit-btn" type="submit">Send</button>
             </form>
         </section>
@@ -152,7 +155,6 @@
         <![endif]-->
         
         <script src="./js/navscroll.js" async defer></script>
-        <script src="./js/formSubmission.js" async defer></script>
         <script src="./js/mobile-nav.js" async defer></script>
     </body>
 </html>
