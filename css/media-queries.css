@@ -1,3 +1,10 @@
+/* Safari only */
+@media not all and (min-resolution: 0.001dpcm) {
+    nav {
+        -webkit-backdrop-filter: blur(0.5rem);
+    }
+}
+
 /* Technologies media query */
 @media (max-width: 53em) {
     #about-content-container {

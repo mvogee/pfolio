@@ -320,7 +320,7 @@ nav a:hover {
     margin: 2.5rem auto;
 }
 .contact-input {
-    width: -webkit-fill-available;
+    width: 100%;
     margin-top: 0.5rem;
     padding: 0.3rem;
     border: 0.1rem solid var(--accent-green);
@@ -340,6 +340,7 @@ nav a:hover {
     resize: none;
 }
 .submit-btn {
+    display: block;
     margin-top: 1.5rem;
     width: fit-content;
     color: var(--accent-green);
