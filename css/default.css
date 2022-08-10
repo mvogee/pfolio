@@ -205,8 +205,12 @@ nav a:hover {
     column-gap: 4em;
 }
 .about-text {
+    max-width: 40em;
     margin: 0.5em;
-    line-height: 1.6rem;
+    line-height: 1.8rem;
+}
+.about-text p {
+    font-size: 1.2rem;
 }
 
 #technologies i{
@@ -230,7 +234,8 @@ nav a:hover {
 /* projects */
 
 .project-container {
-    margin: 5em 0;
+    max-width: 100em;
+    margin: 10em 0;
     display: grid;
     grid-template-columns: repeat(10, 1fr [col-start]);
     grid-template-rows: repeat(8, auto [row-start]);
@@ -260,7 +265,7 @@ nav a:hover {
 
 .project-description {
     color: var(--grey);
-    font-size: 0.9rem;
+    font-size: 1.1rem;
     margin: 1em 0.5em;
 }
 
