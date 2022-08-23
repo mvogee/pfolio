@@ -7,8 +7,8 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Matthew Vogee</title>
-        <meta name="description" content="Portfolio website for Matthew Vogee. Frontend developer.">
+        <title>Matthew Vogee. Front end developer</title>
+        <meta name="description" content="Portfolio website for Matthew Vogee. Front end developer.">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="apple-touch-icon" sizes="180x180" href="./favicon_io/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="./favicon_io/favicon-32x32.png">
@@ -57,16 +57,16 @@
                 <div id="about-content-container">
                     <div class="about-text">
                         <p>
-                            I am a web developer driven by the desire to learn and improve my skills. 
-                            My journey started, like many developers, when I was young with an obsession 
-                            for video games and digital art. I studied graphic design in college and, 
-                            after I graduated, got the opportunity to move to the Bay Area to study 
-                            computer science at 42. At 42, I got the authentic silicon valley experience, 
-                            coding away in the computer lab day after day, attending hackathons, and 
-                            developing my skills as a software developer. Since then, I have continued 
-                            to hone my craft and explore the vast field of web development. I have worked 
-                            in multiple industries in pursuit of learning new skills and obtaining new 
-                            perspectives on work and life. Outside of work, I am a husband, avid golfer, 
+                            I am a web developer driven by the desire to learn and improve my skills.
+                            My journey started, like many developers, when I was young with an obsession
+                            for video games and digital art. I studied graphic design in college and,
+                            after I graduated, got the opportunity to move to the Bay Area to study
+                            computer science at 42. At 42, I got the authentic silicon valley experience,
+                            coding away in the computer lab day after day, attending hackathons, and
+                            developing my skills as a software developer. Since then, I have continued
+                            to hone my craft and explore the vast field of web development. I have worked
+                            in multiple industries in pursuit of learning new skills and obtaining new
+                            perspectives on work and life. Outside of work, I am a husband, avid golfer,
                             snowboarder, and star wars fan.
                         </p>
                     </div>
@@ -152,7 +152,9 @@
         <section id="contact">
             <h2 class="section-title">Get in contact</h2>
             <hr>
-            <form id="contact-form" action="https://getform.io/f/1c9598ab-71f2-42da-a56d-beb8f0b60916" method="POST">
+            <form id="contact-form">
+                <input hidden type="hidden" name="access_key" value="6731c50f-b35d-4d29-a51d-7cf6180f0b2d" />
+                <input type="hidden" name="subject" value="New Submission from Portfolio" />
                 <label for="name-input">Name</label>
                 <input id="name-input" class="contact-input" type="text" name="name" placeholder="Name" required/>
                 <label for="email-input">Email</label>
@@ -161,6 +163,7 @@
                 <textarea id="message-input" class="contact-input" name="message" rows="8" required></textarea>
                 <button class="submit-btn" type="submit">Send</button>
             </form>
+            <p class="messageStatus hidden"></p>
         </section>
         <footer>
             <div class="socials">
@@ -174,5 +177,6 @@
 
         <script src="./js/navscroll.js" async defer></script>
         <script src="./js/mobile-nav.js" async defer></script>
+        <script type="module" src="./js/form.js" async defer></script>
     </body>
 </html>
