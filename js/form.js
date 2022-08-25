@@ -77,14 +77,20 @@ form.addEventListener("submit", (e) => {
         })
         .catch((error) => {
             console.log(error);
-            messageStatus.textContent = "uh oh. An error ocurred. Try again later";
+            messageStatus.textContent = "uh oh! An error ocurred. Please try again.";
         })
         .then(() => {
             form.reset();
-          // reset the form. take away success message after timeout.
+            setTimeout(() => {
+                messageStatus.textContent = "";
+            }, 5000);
         });
     }
     else {
-        messageStatus.textContent = "Form submission canceled.";
+        messageStatus.textContent = "Form submission canceled. Invalid form.";
+        form.reset();
+        setTimeout(() => {
+            messageStatus.textContent = "";
+        }, 3000);
     }
 });
