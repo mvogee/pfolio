@@ -82,7 +82,7 @@ form.addEventListener("submit", (e) => {
         .then(() => {
             form.reset();
             setTimeout(() => {
-                messageStatus.textContent = "";
+                messageStatus.textContent = "Thank you for sending me a message!\nI will send a reply as soon as possible.";
             }, 5000);
         });
     }

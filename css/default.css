@@ -346,7 +346,9 @@ nav a:hover {
 }
 
 .messageStatus {
+    line-height: 1.8rem;
     text-align: center;
+    white-space: pre-line;
 }
 .submit-btn {
     display: block;
